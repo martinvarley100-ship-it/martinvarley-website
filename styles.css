@@ -3,7 +3,7 @@
 :root {
   --bg:   #f5f2ec;
   --ink:  #111110;
-  --mute: #8a8478;
+  --mute: #5a5650;
   --line: #d4cfc6;
   --gold: #9a7d4a;
 }
@@ -65,7 +65,7 @@ h1 {
 
 .cities {
   font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(0.62rem, 1.5vw, 0.72rem);
+  font-size: clamp(0.7rem, 1.5vw, 0.78rem);
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--mute);
@@ -91,9 +91,9 @@ footer {
   font-size: 0.58rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--line);
+  color: var(--mute);
 }
-footer a { color: var(--line); text-decoration: none; transition: color 0.3s; }
+footer a { color: var(--mute); text-decoration: none; transition: color 0.3s; }
 footer a:hover { color: var(--mute); }
 
 /* ── CONTACT PAGE ── */
