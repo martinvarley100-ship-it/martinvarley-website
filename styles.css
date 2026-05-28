@@ -3,8 +3,8 @@
 :root {
   --bg:   #f5f2ec;
   --ink:  #111110;
-  --mute: #5a5650;
-  --line: #d4cfc6;
+  --mute: #4a4740;
+  --line: #b8b2a8;
   --gold: #9a7d4a;
 }
 
@@ -29,8 +29,8 @@ body {
 /* ── TOP MARK ── */
 .topmark {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.62rem;
-  letter-spacing: 0.32em;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--mute);
   text-decoration: none;
@@ -65,8 +65,8 @@ h1 {
 
 .cities {
   font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(0.7rem, 1.5vw, 0.78rem);
-  letter-spacing: 0.28em;
+  font-size: clamp(0.78rem, 2vw, 0.88rem);
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--mute);
 }
@@ -74,8 +74,8 @@ h1 {
 .contact-link {
   display: inline-block;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.62rem;
-  letter-spacing: 0.28em;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--mute);
   text-decoration: none;
@@ -88,13 +88,13 @@ h1 {
 /* ── FOOTER ── */
 footer {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.58rem;
-  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--mute);
 }
 footer a { color: var(--mute); text-decoration: none; transition: color 0.3s; }
-footer a:hover { color: var(--mute); }
+footer a:hover { color: var(--ink); }
 
 /* ── CONTACT PAGE ── */
 .contact-wrap {
@@ -110,8 +110,8 @@ footer a:hover { color: var(--mute); }
 }
 .contact-wrap .sub {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.62rem;
-  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--mute);
   margin-bottom: 3rem;
@@ -124,15 +124,15 @@ form { display: flex; flex-direction: column; gap: 1.6rem; text-align: left; }
 
 label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.58rem;
-  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--mute);
 }
 
 input, textarea, select {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 300;
   color: var(--ink);
   background: transparent;
@@ -144,21 +144,29 @@ input, textarea, select {
   transition: border-color 0.3s;
   -webkit-appearance: none;
   border-radius: 0;
+  min-height: 44px;
 }
 input:focus, textarea:focus, select:focus { border-color: var(--ink); }
 textarea { resize: none; min-height: 100px; }
-select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238a8478'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 4px center; padding-right: 20px; }
+select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%234a4740'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 20px;
+}
 input::placeholder, textarea::placeholder { color: var(--line); }
 
 button[type=submit] {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.62rem;
-  letter-spacing: 0.28em;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--bg);
   background: var(--ink);
   border: none;
   padding: 1rem 2.5rem;
+  min-height: 48px;
   cursor: pointer;
   transition: opacity 0.3s;
   align-self: flex-start;
@@ -176,8 +184,8 @@ button[type=submit]:hover { opacity: 0.75; }
 }
 .thanks-main p {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.22em;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--mute);
   max-width: 320px;
@@ -186,4 +194,5 @@ button[type=submit]:hover { opacity: 0.75; }
 
 @media (max-width: 480px) {
   body { padding: 2rem 1.4rem; }
+  h1 { font-size: clamp(2.8rem, 14vw, 4rem); }
 }
