@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap');
+
+:root {
+  --bg:   #f5f2ec;
+  --ink:  #111110;
+  --mute: #8a8478;
+  --line: #d4cfc6;
+  --gold: #9a7d4a;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 300;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── TOP MARK ── */
+.topmark {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--mute);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.topmark:hover { color: var(--ink); }
+
+/* ── MAIN ── */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.2rem;
+  max-width: 600px;
+  width: 100%;
+  padding: 2.5rem 0;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: clamp(3rem, 9vw, 5.5rem);
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  font-style: italic;
+}
+
+.rule {
+  width: 1px;
+  height: 52px;
+  background: var(--line);
+}
+
+.cities {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(0.62rem, 1.5vw, 0.72rem);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.contact-link {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--mute);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: color 0.3s, border-color 0.3s;
+}
+.contact-link:hover { color: var(--ink); border-color: var(--ink); }
+
+/* ── FOOTER ── */
+footer {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--line);
+}
+footer a { color: var(--line); text-decoration: none; transition: color 0.3s; }
+footer a:hover { color: var(--mute); }
+
+/* ── CONTACT PAGE ── */
+.contact-wrap {
+  width: 100%;
+  max-width: 480px;
+}
+.contact-wrap h2 {
+  font-weight: 300;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-style: italic;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+.contact-wrap .sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 3rem;
+}
+.rule-h { width: 40px; height: 1px; background: var(--line); margin: 0 auto 3rem; }
+
+form { display: flex; flex-direction: column; gap: 1.6rem; text-align: left; }
+
+.field { display: flex; flex-direction: column; gap: 0.5rem; }
+
+label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+input, textarea, select {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 0.5rem 0;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input:focus, textarea:focus, select:focus { border-color: var(--ink); }
+textarea { resize: none; min-height: 100px; }
+select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238a8478'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 4px center; padding-right: 20px; }
+input::placeholder, textarea::placeholder { color: var(--line); }
+
+button[type=submit] {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--ink);
+  border: none;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+button[type=submit]:hover { opacity: 0.75; }
+
+/* ── THANKS PAGE ── */
+.thanks-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  text-align: center;
+}
+.thanks-main p {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mute);
+  max-width: 320px;
+  line-height: 1.9;
+}
+
+@media (max-width: 480px) {
+  body { padding: 2rem 1.4rem; }
+}
