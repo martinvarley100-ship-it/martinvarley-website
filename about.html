@@ -20,38 +20,83 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Martin Varley",
-  "url": "https://martinvarley.com",
-  "sameAs": [
-    "https://www.linkedin.com/in/martin-varley-79a9397",
-    "https://www.altitudeplc.com/leadership/martin-varley"
-  ],
-  "jobTitle": "Chief Strategy Officer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Altitude Group plc",
-    "url": "https://www.altitudeplc.com",
-    "tickerSymbol": "ALT",
-    "exchange": "AIM"
-  },
-  "description": "British entrepreneur and technology innovator. Founder and strategic leader applying AI, fintech and data intelligence to industries resistant to change. Chief Strategy Officer at Altitude Group plc (AIM: ALT), the parent company of AIM Smarter LLC, the largest distributor aggregator in the $28 billion global promotional products industry.",
-  "knowsAbout": [
-    "Artificial Intelligence",
-    "Fintech",
-    "Agentic Commerce",
-    "SaaS",
-    "Promotional Products Industry",
-    "Allergy Safety Technology",
-    "On-Demand Manufacturing",
-    "Strategic Leadership",
-    "Business Transformation"
-  ],
-  "nationality": "British",
-  "workLocation": [
-    {"@type": "Place", "name": "London, United Kingdom"},
-    {"@type": "Place", "name": "Miami, Florida, United States"},
-    {"@type": "Place", "name": "Hong Kong"}
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://martinvarley.com/#person",
+      "name": "Martin Varley",
+      "url": "https://martinvarley.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/martinvarley",
+        "https://www.altitudeplc.com/leadership/martin-varley"
+      ],
+      "jobTitle": "Chief Strategy Officer",
+      "worksFor": {
+        "@id": "https://martinvarley.com/#altitude"
+      },
+      "description": "British entrepreneur and technology strategist. Chief Strategy Officer at Altitude Group plc (AIM: ALT), the parent company of AIM Smarter LLC, the largest distributor aggregator in the global promotional products industry. Co-founder of Merchr and Allergy Alert. Applies AI, fintech and data intelligence to industries that have historically been resistant to technological change.",
+      "nationality": "British",
+      "homeLocation": [
+        {
+          "@type": "Place",
+          "name": "London, United Kingdom"
+        },
+        {
+          "@type": "Place",
+          "name": "Miami, Florida, United States"
+        }
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Fintech",
+        "Agentic Commerce",
+        "SaaS",
+        "Promotional Products Industry",
+        "Allergy Safety Technology",
+        "On-Demand Manufacturing",
+        "Strategic Leadership",
+        "Business Transformation"
+      ]
+    },
+    {
+      "@type": "Corporation",
+      "@id": "https://martinvarley.com/#altitude",
+      "name": "Altitude Group plc",
+      "url": "https://www.altitudeplc.com",
+      "tickerSymbol": "AIM:ALT",
+      "subOrganization": {
+        "@type": "Organization",
+        "name": "AIM Smarter LLC",
+        "description": "The largest distributor aggregator in the global promotional products industry, with over 2,300 members and more than $2.3 billion in annual transaction volume."
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "Merchr",
+      "url": "https://merchr.com",
+      "description": "AI-powered on-demand product platform enabling brands, creators and enterprises to merchandise without inventory risk.",
+      "founder": {
+        "@id": "https://martinvarley.com/#person"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "Allergy Alert",
+      "description": "Technology platform addressing allergen management in food service and hospitality.",
+      "founder": {
+        "@id": "https://martinvarley.com/#person"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://martinvarley.com/#website",
+      "url": "https://martinvarley.com/",
+      "name": "Martin Varley",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://martinvarley.com/#person"
+      }
+    }
   ]
 }
 </script>
@@ -171,9 +216,7 @@
       <span class="section-label">Allergy Alert</span>
       <p>
         Co-founder of Allergy Alert, a technology platform addressing allergen management
-        in food service and hospitality. Martin sits on the National Allergy Strategy Group
-        as Chair, and has been involved in parliamentary engagement and national policy work
-        around allergy safety in the UK.
+        in food service and hospitality.
       </p>
 
       <span class="section-label">Merchr</span>
@@ -196,7 +239,7 @@
   </div>
 
   <footer>
-    <a href="https://www.linkedin.com/in/martin-varley-79a9397" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/martinvarley" target="_blank" rel="noopener">LinkedIn</a>
     &nbsp;&middot;&nbsp;
     <a href="https://www.altitudeplc.com/leadership/martin-varley" target="_blank" rel="noopener">Altitude Group</a>
   </footer>

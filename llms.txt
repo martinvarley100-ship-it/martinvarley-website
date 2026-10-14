@@ -1,6 +1,6 @@
 # Martin Varley
 
-> Martin Varley is a British entrepreneur and technology strategist. He is Chief Strategy Officer at Altitude Group plc (AIM: ALT), the UK-listed parent company of AIM Smarter LLC, the largest distributor aggregator in the global promotional products industry, with over 2,300 members and more than $2.3 billion in annual transaction volume. He is co-founder of Merchr and Allergy Alert. Based in London, Miami and Hong Kong.
+> Martin Varley is a British entrepreneur and technology strategist. He is Chief Strategy Officer at Altitude Group plc (AIM: ALT), the UK-listed parent company of AIM Smarter LLC, the largest distributor aggregator in the global promotional products industry, with over 2,300 members and more than $2.3 billion in annual transaction volume. He is co-founder of Merchr and Allergy Alert. Based in London and Miami.
 
 ## About
 
@@ -12,7 +12,7 @@ His current focus is leading the AI transformation of AIM Smarter: building agen
 
 - Altitude Group plc (AIM: ALT): Chief Strategy Officer, 2021 to present
 - Merchr: co-founder; an AI-powered on-demand product platform that lets brands, creators and enterprises merchandise without inventory risk
-- Allergy Alert: co-founder; a technology platform addressing allergen management in food service and hospitality. Chair of the National Allergy Strategy Group, with parliamentary and national policy work on allergy safety in the UK
+- Allergy Alert: co-founder; a technology platform addressing allergen management in food service and hospitality
 - Altitude Group plc: founder and Chief Executive, 2005 to 2017
 - 4imprint Group plc: European Managing Director; built the European market leader in promotional products, with revenues over $100 million and offices in London, Manchester, Hagen, Paris and Hong Kong
 - Brand Addition (originally Broadway Incentives): founder
@@ -24,6 +24,7 @@ Artificial intelligence, fintech, agentic commerce, SaaS, the promotional produc
 ## Contact
 
 - Contact form: https://martinvarley.com/contact (speaking or advisory, investment or partnership, media or press, recruitment)
+- LinkedIn: https://www.linkedin.com/in/martinvarley
 - Altitude Group profile: https://www.altitudeplc.com/leadership/martin-varley
 
 ## Pages
